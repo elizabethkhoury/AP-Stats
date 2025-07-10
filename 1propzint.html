@@ -4,21 +4,65 @@
   <meta charset="UTF-8" />
   <title>1-Proportion Z-Interval</title>
   <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
     body {
-      font-family: Arial, sans-serif;
-      margin: 40px;
-      max-width: 700px;
+      font-family: 'Poppins', Arial, sans-serif;
+      background-color: #f4f6f8;
+      color: #2c3e50;
+      margin: 0;
+      padding: 40px 16px;
+      display: flex;
+      justify-content: center;
+    }
+
+    body > * {
+      max-width: 720px;
+      width: 100%;
+      background-color: #ffffff;
+      padding: 40px;
+      border-radius: 12px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
     }
 
     h1, h2, h3 {
       all: unset;
       display: block;
-      color: #34495e;
-      font-family: Arial, sans-serif;
-      font-size: 1.5em;
-      font-weight: bold;
+      color: #2c3e50;
+      font-weight: 600;
       margin-top: 24px;
       margin-bottom: 12px;
+    }
+
+    h1 {
+      font-size: 2em;
+      border-bottom: 2px solid #3498db;
+      padding-bottom: 10px;
+      margin-bottom: 30px;
+    }
+
+    h2 {
+      font-size: 1.5em;
+      color: #2980b9;
+    }
+
+    h3 {
+      font-size: 1.2em;
+      color: #34495e;
+    }
+
+    p {
+      line-height: 1.6;
+      margin-bottom: 16px;
+    }
+
+    ul {
+      padding-left: 20px;
+      margin-bottom: 16px;
+    }
+
+    ul li {
+      margin-bottom: 8px;
     }
 
     a.home-link {
@@ -27,10 +71,10 @@
       font-weight: bold;
       color: #e74c3c;
       text-decoration: none;
-      border: 1px solid #e74c3c;
-      padding: 6px 12px;
-      border-radius: 4px;
-      transition: background-color 0.3s, color 0.3s;
+      border: 2px solid #e74c3c;
+      padding: 8px 16px;
+      border-radius: 6px;
+      transition: all 0.3s ease;
     }
 
     a.home-link:hover {
@@ -39,16 +83,24 @@
     }
 
     .example-box {
-      border-left: 4px solid #3498db;
-      padding-left: 16px;
-      margin: 24px 0;
-      background-color: #f9f9f9;
-      padding: 16px;
-      border-radius: 6px;
+      border-left: 5px solid #3498db;
+      background-color: #f0f8ff;
+      padding: 24px;
+      margin: 32px 0;
+      border-radius: 10px;
     }
 
-    ul li {
-      margin-bottom: 8px;
+    img {
+      display: block;
+      margin-top: 16px;
+      margin-bottom: 24px;
+      max-width: 100%;
+      border-radius: 8px;
+      box-shadow: 0 2px 12px rgba(0, 0, 0, 0.05);
+    }
+
+    li strong {
+      color: #2c3e50;
     }
   </style>
 </head>
@@ -99,9 +151,10 @@
     </ul>
 
     <h3>Step 5: Conclusion</h3>
-   <p> We are <strong>95% confident</strong> that the true proportion of all customers who ask for a water cup and fill it with a soft drink is contained in the interval <strong>(0.188, 0.387)</strong>.</p>
+    <p>We are <strong>95% confident</strong> that the true proportion of all customers who ask for a water cup and fill it with a soft drink is contained in the interval <strong>(0.188, <strong>,</strong> 0.387)</strong>.</p>
   </div>
 
   <a href="index.html" class="home-link">&larr; Back to Home</a>
 </body>
 </html>
+

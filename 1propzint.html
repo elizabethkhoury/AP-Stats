@@ -10,18 +10,17 @@
       max-width: 700px;
     }
 
-  h1, h2, h3 {
-  all: unset;
-  display: block;
-  color: #34495e;
-  font-family: Arial, sans-serif;
-  font-size: 1.5em;
-  font-weight: bold;
-  margin-top: 24px;
-  margin-bottom: 12px;
-}
+    h1, h2, h3 {
+      all: unset;
+      display: block;
+      color: #34495e;
+      font-family: Arial, sans-serif;
+      font-size: 1.5em;
+      font-weight: bold;
+      margin-top: 24px;
+      margin-bottom: 12px;
+    }
 
-    
     a.home-link {
       display: inline-block;
       margin-top: 40px;
@@ -33,9 +32,23 @@
       border-radius: 4px;
       transition: background-color 0.3s, color 0.3s;
     }
+
     a.home-link:hover {
       background-color: #e74c3c;
       color: white;
+    }
+
+    .example-box {
+      border-left: 4px solid #3498db;
+      padding-left: 16px;
+      margin: 24px 0;
+      background-color: #f9f9f9;
+      padding: 16px;
+      border-radius: 6px;
+    }
+
+    ul li {
+      margin-bottom: 8px;
     }
   </style>
 </head>
@@ -55,7 +68,40 @@
   <h3>Calculate</h3>
   <img src="1propzint.jpeg" alt="1-Proportion Z-Interval Diagram" width="400">
 
-  <br>
+  <div class="example-box">
+    <h2>Example: Chick-fil-A Water Cup Problem</h2>
+    <p>The manager at Chick-fil-A is concerned about customers who ask for a water cup when placing an order but fill it up with a soft drink. The manager selects a random sample of 80 customers who asked for a water cup before placing an order and found that 23 of them filled it up with a soft drink.</p>
+
+    <h3>Step 1: Procedure</h3>
+    <p>1-Prop Z-Interval</p>
+
+    <h3>Step 2: Parameter</h3>
+    <p><strong>p</strong> = the true proportion of all customers who, having asked for a water cup, fill it up with a soft drink.</p>
+
+    <h3>Step 3: Conditions</h3>
+    <ul>
+      <li>Random: The sample was randomly selected.</li>
+      <li>10% Condition: 80 is less than 10% of all Chick-fil-A customers.</li>
+      <li>Large Counts:</li>
+      <ul>
+        <li>np̂ = 80 × 23/80 = 23 ≥ 10</li>
+        <li>n(1 - p̂) = 80 × 57/80 = 57 ≥ 10</li>
+      </ul>
+    </ul>
+
+    <h3>Step 4: Calculations</h3>
+    <ul>
+      <li>p̂ = 23/80 = 0.2875</li>
+      <li>Standard Error (SE) = √[(0.2875)(0.7125)/80] ≈ 0.0509</li>
+      <li>z* = 1.96 for 95% confidence</li>
+      <li>Margin of Error = 1.96 × 0.0509 ≈ 0.0998</li>
+      <li><strong>Confidence Interval: (0.188, 0.387)</strong></li>
+    </ul>
+
+    <h3>Step 5: Conclusion</h3>
+    <p>We are <strong>95% confident</strong> that the true proportion of all customers who ask for a water cup and fill it with a soft drink is between <strong>0.188</strong> and <strong>0.387</strong>.</p>
+  </div>
+
   <a href="index.html" class="home-link">&larr; Back to Home</a>
 </body>
 </html>

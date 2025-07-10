@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>AP Stats Topics</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      margin: 20px;
+    }
+    h1, h2 {
+      color: #2c3e50;
+    }
+    ul {
+      list-style-type: none;
+      padding-left: 0;
+    }
+    li a {
+      text-decoration: none;
+      color: #2980b9;
+    }
+    li a:hover {
+      text-decoration: underline;
+    }
+    .topic {
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Welcome to AP Stats</h1>
+  <p>Click a topic below to learn more:</p>
+  <ul>
+    <li><a href="#type1">Type I Error</a></li>
+    <li><a href="#type2">Type II Error</a></li>
+  </ul>
+
+  <div class="topic" id="type1">
+    <h2>Type I Error</h2>
+    <p><strong>Definition:</strong> We reject H<sub>0</sub> when H<sub>0</sub> is true.</p>
+    <p><strong>Interpretation:</strong> Therefore we believe there is significant evidence to suggest that H<sub>0</sub> is not true, when it actually is.</p>
+    <p><strong>Probability:</strong> α (alpha level)</p>
+  </div>
+
+  <div class="topic" id="type2">
+    <h2>Type II Error</h2>
+    <p><strong>Definition:</strong> We fail to reject H<sub>0</sub> when H<sub>a</sub> is true.</p>
+    <p><strong>Interpretation:</strong> Therefore we do not believe there is significant evidence to suggest that H<sub>a</sub> is true, when it actually is.</p>
+    <p><strong>Probability:</strong> 1 − Power</p>
+  </div>
+</body>
+</html>

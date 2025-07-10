@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>2-Proportion Z-Test</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 40px;
+    }
+    h1 {
+      color: #34495e;
+    }
+    h2 {
+      color: #2c3e50;
+    }
+    .back {
+      margin-top: 30px;
+    }
+    a {
+      color: #2980b9;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+  <h1>2-Proportion Z-Test</h1>
+
+  <h2>Formula</h2>
+  <p>
+    <code>z = (p̂₁ - p̂₂) / √(p̂(1 - p̂)(1/n₁ + 1/n₂))</code><br>
+    Where p̂ is the pooled sample proportion.
+  </p>
+
+  <h2>Interpretation</h2>
+  <p>
+    If the p-value is less than alpha, we reject the null hypothesis. This provides evidence that the proportions are significantly different.
+  </p>
+
+  <h2>Conditions</h2>
+  <ul>
+    <li>Random samples</li>
+    <li>Independent groups</li>
+    <li>np ≥ 10 and n(1-p) ≥ 10 for both groups</li>
+  </ul>
+
+  <h2>Example</h2>
+  <p>
+    A school wants to know if the proportion of students who pass a test is different between two teachers' classes.
+    Teacher A: 45 out of 60 passed. <br>
+    Teacher B: 30 out of 50 passed. <br>
+    A 2-proportion Z-Test is used to determine if there's a significant difference.
+  </p>
+
+  <div class="back">
+    <a href="index.html">&larr; Back to Home</a>
+  </div>
+</body>
+</html>

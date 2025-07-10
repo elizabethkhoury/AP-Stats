@@ -1,52 +1,73 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>AP Stats Topics</title>
+  <meta charset="UTF-8" />
+  <title>Type I and Type II Errors</title>
   <style>
     body {
       font-family: Arial, sans-serif;
-      line-height: 1.6;
-      margin: 20px;
+      margin: 40px;
+      max-width: 700px;
     }
     h1, h2 {
-      color: #2c3e50;
+      color: #34495e;
     }
-    ul {
-      list-style-type: none;
-      padding-left: 0;
-    }
-    li a {
-      text-decoration: none;
+    nav a {
+      margin-right: 20px;
       color: #2980b9;
-    }
-    li a:hover {
+      cursor: pointer;
       text-decoration: underline;
     }
-    .topic {
-      margin-top: 40px;
+    section {
+      display: none;
+      margin-top: 20px;
+    }
+    section.active {
+      display: block;
     }
   </style>
 </head>
 <body>
-  <h1>Welcome to AP Stats</h1>
-  <p>Click a topic below to learn more:</p>
-  <ul>
-    <li><a href="#type1">Type I Error</a></li>
-    <li><a href="#type2">Type II Error</a></li>
-  </ul>
+  <h1>Type I and Type II Errors</h1>
 
-  <div class="topic" id="type1">
+  <nav>
+    <a onclick="showSection('type1')">Type I Error</a>
+    <a onclick="showSection('type2')">Type II Error</a>
+  </nav>
+
+  <section id="type1">
     <h2>Type I Error</h2>
-    <p><strong>Definition:</strong> We reject H<sub>0</sub> when H<sub>0</sub> is true.</p>
-    <p><strong>Interpretation:</strong> Therefore we believe there is significant evidence to suggest that H<sub>0</sub> is not true, when it actually is.</p>
-    <p><strong>Probability:</strong> α (alpha level)</p>
-  </div>
+    <p>
+      We reject the null hypothesis (H₀) when H₀ is actually true.<br />
+      Therefore, we believe there is significant evidence to suggest that H₀ is not true, when in fact it is.
+    </p>
 
-  <div class="topic" id="type2">
+    <h3>Probability:</h3>
+    <p>The probability of making a Type I error is called the <strong>alpha-level</strong> (α).</p>
+  </section>
+
+  <section id="type2">
     <h2>Type II Error</h2>
-    <p><strong>Definition:</strong> We fail to reject H<sub>0</sub> when H<sub>a</sub> is true.</p>
-    <p><strong>Interpretation:</strong> Therefore we do not believe there is significant evidence to suggest that H<sub>a</sub> is true, when it actually is.</p>
-    <p><strong>Probability:</strong> 1 − Power</p>
-  </div>
+    <p>
+      We fail to reject the null hypothesis (H₀) when the alternative hypothesis (Hₐ) is true.<br />
+      Therefore, we do not believe there is significant evidence to suggest that Hₐ is true, when it actually is.
+    </p>
+
+    <h3>Probability:</h3>
+    <p>The probability of making a Type II error is <strong>1 - power</strong>.</p>
+  </section>
+
+  <script>
+    function showSection(id) {
+      // Hide all sections
+      document.querySelectorAll('section').forEach(sec => {
+        sec.classList.remove('active');
+      });
+      // Show selected section
+      document.getElementById(id).classList.add('active');
+    }
+    // Show Type I Error by default
+    showSection('type1');
+  </script>
 </body>
 </html>
